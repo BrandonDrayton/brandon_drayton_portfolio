@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./About.scss";
-
-import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 const About = () => {
@@ -46,4 +45,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
