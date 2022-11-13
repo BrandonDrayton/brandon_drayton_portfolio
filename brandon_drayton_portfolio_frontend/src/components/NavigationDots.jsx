@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavgiationDots = ({ active }) => {
+const NavigationDots = ({ active }) => {
   return (
     <div className="app__navigation">
       {["home", "about", "work", "skills", "contact"].map((item, i) => (
@@ -16,4 +16,4 @@ const NavgiationDots = ({ active }) => {
   );
 };
 
-export default NavgiationDots;
+export default NavigationDots;
