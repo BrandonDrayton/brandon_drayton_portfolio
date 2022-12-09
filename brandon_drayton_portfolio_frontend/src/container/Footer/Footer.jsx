@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="p-text">
+          <a href="tel:(404) 775-9009" className="p-text">
             (404) 775-9009
           </a>
         </div>
@@ -78,6 +78,7 @@ const Footer = () => {
           <div className="app__flex">
             <input
               className="p-text"
+              required
               type="email"
               placeholder="Your Email"
               name="email"
@@ -107,4 +108,8 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Footer, "app__footer"), "contact");
+export default AppWrap(
+  MotionWrap(Footer, "app__footer"),
+  "contact",
+  "app__whitebg"
+);
